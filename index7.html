@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tiêu đề trang -->
+    <h1>Lịch họp công ty</h1>[cite: 18]
+
+    <!-- Bảng thông tin lịch họp gồm các cột Ngày, Giờ, Nội dung cuộc họp -->
+    <table border="1">
+        <tr>
+            <th>Ngày</th>[cite: 18]
+            <th>Giờ</th>[cite: 18]
+            <th>Nội dung cuộc họp</th>[cite: 18]
+        </tr>
+        <tr>
+            <!-- Sử dụng rowspan để gộp các ô trong cột Ngày khi có nhiều cuộc họp -->
+            <td rowspan="2">Thứ Hai</td>[cite: 18]
+            <td>08:00 - 10:00</td>
+            <td>Họp giao ban tuần</td>
+        </tr>
+        <tr>
+            <td>14:00 - 16:00</td>
+            <td>Họp tiến độ dự án</td>
+        </tr>
+        <tr>
+            <td>Thứ Ba</td>[cite: 18]
+            <!-- Sử dụng colspan để gộp ô nếu cuộc họp kéo dài nhiều giờ / toàn thời gian -->
+            <td colspan="2">Toàn công ty nghỉ mát</td>[cite: 18]
+        </tr>
+    </table>
+
+</body>
+</html>
