@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Hoàn Chỉnh - Bootstrap & Font Awesome</title>
+    <!-- Bước 1: Cài đặt Bootstrap CSS từ CDN[cite: 26] -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nhúng Font Awesome để hiển thị icon[cite: 26] -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Bước 2: Tạo Navbar với Font Awesome[cite: 26] -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-home"></i> MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bước 3: Tạo Hero Section với Carousel[cite: 26] -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Slide 1" style="height: 450px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Slide 2" style="height: 450px; object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Bước 4: Thêm Section với Flexbox[cite: 27] -->
+    <div class="d-flex justify-content-center align-items-center bg-light py-5">
+        <h2>Chào mừng đến với trang web của chúng tôi!</h2>
+    </div>
+
+    <!-- Bước 5: Tạo Contact Form với Bootstrap Form[cite: 27] -->
+    <form class="container my-5" style="max-width: 600px;">
+        <h3 class="mb-4 text-center">Liên Hệ Với Chúng Tôi</h3>
+        <div class="mb-3">
+            <label for="name" class="form-label">Tên của bạn</label>
+            <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn...">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn...">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Gửi</button>
+    </form>
+
+    <!-- Nhúng Bootstrap JS Bundle từ CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
