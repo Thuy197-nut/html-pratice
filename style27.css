@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Tạo 2 cột */
+    grid-row-gap: 20px; /* Tạo khoảng cách 20px giữa các hàng */
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
