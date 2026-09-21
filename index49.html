@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone - Giới thiệu sản phẩm</title>
+    <!-- Nhúng Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nhúng Font Awesome để hiển thị icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- 1. Thanh điều hướng tối giản phong cách Apple -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+        <div class="container d-flex justify-content-between align-items-center"> <!-- Sử dụng Flexbox & justify-content -->
+            <a class="navbar-brand fs-4 fw-semibold" href="#"><i class="fab fa-apple"></i> iPhone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Tổng quan</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Đặc điểm</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Thông số</a></li>
+                    <li class="nav-item"><a class="btn btn-primary btn-sm px-3 py-2 rounded-pill" href="#">Mua ngay</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section (Phần giới thiệu chính với Flexbox và Grid) -->
+    <header class="container text-center my-5 py-5"> <!-- Áp dụng margin và padding -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <span class="text-warning text-uppercase fw-bold tracking-wide">Mới</span>
+                <h1 class="display-3 fw-bold mt-2 mb-3">iPhone Pro Max</h1>
+                <p class="lead text-secondary mb-4">Titan tự nhiên. Bền bỉ. Nhẹ hơn. Thiết kế đỉnh cao kết hợp hiệu năng vô song.</p>
+                <div class="d-flex justify-content-center gap-3"> <!-- Sử dụng flexbox căn giữa các nút bấm[cite: 25] -->
+                    <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Tìm hiểu thêm</a>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2">Mua</a>
+                </div>
+            </div>
+        </div>
+        <!-- Hình ảnh sản phẩm lớn -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-10">
+                <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1200&q=80" alt="iPhone Product" class="img-fluid rounded-4 shadow-lg">
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Phần tính năng nổi bật (Grid System & Flexbox kết hợp Font Awesome)[cite: 25] -->
+    <section class="container py-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-5">Khám phá các tính năng vượt trội</h2>
+            <p class="text-secondary">Được chế tác tinh xảo để mang lại trải nghiệm tốt nhất.</p>
+        </div>
+
+        <!-- Bootstrap Grid System (3 cột)[cite: 25] -->
+        <div class="row g-4">
+            <!-- Tính năng 1 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white border-secondary h-100 p-4 d-flex flex-column justify-content-between"> <!-- Flexbox layout trong card[cite: 25] -->
+                    <div>
+                        <div class="mb-3 text-primary fs-2">
+                            <i class="fas fa-microchip"></i> <!-- Icon Font Awesome[cite: 25] -->
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Chip A-Series Pro</h3>
+                        <p class="text-secondary">Hiệu năng đồ họa mang tầm đẳng cấp máy chơi game chuyên nghiệp, cân mọi tác vụ nặng.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tính năng 2 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white border-secondary h-100 p-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="mb-3 text-success fs-2">
+                            <i class="fas fa-camera"></i> <!-- Icon Font Awesome[cite: 25] -->
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Hệ thống Camera Pro</h3>
+                        <p class="text-secondary">Khả năng chụp ảnh thu phóng quang học siêu xa và quay video chuẩn điện ảnh sắc nét.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tính năng 3 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white border-secondary h-100 p-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="mb-3 text-warning fs-2">
+                            <i class="fas fa-battery-full"></i> <!-- Icon Font Awesome[cite: 25] -->
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">Thời lượng pin dài</h3>
+                        <p class="text-secondary">Tận hưởng thời gian sử dụng liền mạch cả ngày dài mà không lo gián đoạn công việc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Footer -->
+    <footer class="bg-dark text-secondary py-4 border-top border-secondary">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Apple Inc. Bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
