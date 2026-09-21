@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bài tập định kiểu danh sách CSS</title>
+    <style>
+        /* Định kiểu toàn bộ danh sách: đổi màu chữ chung */
+        ul.custom-list {
+            list-style-type: square;
+            list-style-position: inside;
+            color: #333;
+        }
+
+        /* Định kiểu riêng cho từng mục (li) */
+        ul.custom-list li {
+            background-color: #f2f2f2;
+            margin-bottom: 5px;
+            padding: 5px;
+            color: #0066cc; /* Màu sắc riêng cho phần tử danh sách */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Danh sách sản phẩm nổi bật</h2>
+    <ul class="custom-list">
+        <li>Laptop Gaming</li>
+        <li>Bàn phím cơ</li>
+        <li>Chuột không dây</li>
+    </ul>
+
+</body>
+</html>
