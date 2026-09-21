@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bài tập định kiểu bảng CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Gộp đường viền bảng */
+        }
+        th, td {
+            border: 1px solid #333; /* Định màu đường viền */
+            padding: 12px;         /* Khoảng cách nội dung bên trong */
+            text-align: left;      /* Canh lề ngang */
+            vertical-align: middle;/* Canh lề dọc */
+        }
+        th {
+            background-color: #0066cc; /* Màu nền tiêu đề */
+            color: white;              /* Màu chữ tiêu đề */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá bán</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Áo khoác gió</td>
+            <td>250,000 đ</td>
+        </tr>
+    </table>
+
+</body>
+</html>
