@@ -1,0 +1,46 @@
+/* 1. Đổi màu nền của trang (sử dụng element selector: body) */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 2. Căn giữa tiêu đề <h1> (sử dụng element selector) */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* 3. Định dạng danh sách với màu sắc khác nhau (sử dụng class selectors) */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.hobby-1 {
+    color: #e74c3c; /* Màu đỏ */
+}
+
+.hobby-2 {
+    color: #3498db; /* Màu xanh dương */
+}
+
+.hobby-3 {
+    color: #2ecc71; /* Màu xanh lá */
+}
+
+/* 4. Sử dụng hover effect cho nút bấm (sử dụng id selector kết hợp pseudo-class :hover) */
+#my-button {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#my-button:hover {
+    background-color: #e67e22; /* Đổi sang màu cam khi di chuột vào */
+}
