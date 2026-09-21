@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.item1 {
+    flex-basis: 150px; /* Đặt kích thước ban đầu là 150px */
+}
+
+.item2 {
+    flex-basis: 300px; /* Đặt kích thước ban đầu là 300px */
+    background-color: #e74c3c;
+}
