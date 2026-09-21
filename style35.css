@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    /* Viết tắt của flex-direction: row và flex-wrap: wrap */
+    flex-flow: row wrap; 
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Đặt chiều rộng để thấy rõ hiệu ứng wrap theo hàng ngang */
+}
