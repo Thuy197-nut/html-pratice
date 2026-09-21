@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Tạo 2 cột */
+    grid-template-rows: repeat(2, 100px); /* Tạo 2 hàng có chiều cao 100px */
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Yêu cầu Item 1 bắt đầu từ hàng 1 và kéo dài đến đường kẻ hàng số 3 (chiếm 2 hàng) */
+.item1 {
+    grid-row: 1 / 3; /* Tương đương grid-row-start: 1; grid-row-end: 3; */
+    background-color: #e74c3c;
+}
