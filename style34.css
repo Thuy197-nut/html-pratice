@@ -1,0 +1,26 @@
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.item1 {
+    flex-grow: 1; /* Phát triển với hệ số 1 */
+}
+
+.item2 {
+    flex-grow: 2; /* Phát triển gấp đôi item 1 và item 3 */
+    background-color: #e74c3c;
+}
+
+.item3 {
+    flex-grow: 1; /* Phát triển với hệ số 1 */
+}
