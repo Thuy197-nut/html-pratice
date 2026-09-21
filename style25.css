@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    /* Tạo 3 cột với các kích thước lần lượt là: Cột 1 rộng 200px, Cột 2 chiếm phần trăm, Cột 3 tự động */
+    grid-template-columns: 200px 1fr auto;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
