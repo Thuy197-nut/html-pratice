@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Tự động xuống dòng khi không đủ chỗ */
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 200px; /* Đặt chiều rộng cố định để thấy rõ hiệu ứng wrap */
+}
