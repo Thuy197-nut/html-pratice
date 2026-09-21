@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.instruction {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Sử dụng Flexbox để dàn trải các ảnh */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: calc(25% - 12px); /* Mặc định hiển thị 4 ảnh trên 1 dòng (>700px) */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-note {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* --- Media Queries cho Responsive --- */
+
+/* Màn hình nhỏ hơn 700px: Hiển thị 2 ảnh trên cùng một dòng */
+@media (max-width: 700px) {
+    .gallery-item {
+        width: calc(50% - 8px);
+    }
+}
+
+/* M màn hình nhỏ hơn 500px: Hiển thị 1 ảnh trên một dòng (xếp dọc 100%) */
+@media (max-width: 500px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
