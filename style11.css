@@ -1,0 +1,31 @@
+/* 1. Thiết lập màu nền cho trang web */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Căn chỉnh tiêu đề và đoạn văn cho đẹp mắt */
+h1 {
+    color: #2c3e50;
+}
+
+/* 2. Thêm ảnh nền và căn giữa nội dung trong khối <div> */
+.content-box {
+    /* Đảm bảo tên file ảnh trùng khớp với ảnh bạn chuẩn bị (ví dụ: background.jpg) */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    /* Thiết lập kích thước khung để hiển thị rõ ảnh nền */
+    width: 60%;
+    margin: 30px auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+    color: white; /* Đổi màu chữ cho dễ đọc trên nền ảnh */
+    
+    /* 3. Căn giữa nội dung bên trong khối div */
+    text-align: center;
+}
