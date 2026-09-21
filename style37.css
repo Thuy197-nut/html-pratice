@@ -1,0 +1,86 @@
+/* Thiết lập cơ bản chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+/* Khung chính sử dụng Flexbox */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+/* Định dạng Header */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Định dạng Navigation */
+.nav {
+    background-color: #34495e;
+    padding: 12px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #1abc9c;
+}
+
+/* Khung bọc Main Content và Sidebar để hiển thị dạng lưới ngang trên Desktop */
+.content-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+/* Định dạng Main Content */
+.main {
+    flex: 3; /* Chiếm không gian lớn hơn */
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    min-height: 250px;
+}
+
+/* Định dạng Sidebar */
+.sidebar {
+    flex: 1; /* Chiếm không gian nhỏ hơn */
+    background-color: #e8f8f5;
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+
+/* Định dạng Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* --- Yêu cầu Responsive trên thiết bị di động (Màn hình từ 768px trở xuống) --- */
+@media (max-width: 768px) {
+    .content-wrapper {
+        /* Chuyển các phần tử trong content-wrapper xếp dọc theo chiều cột */
+        flex-direction: column;
+    }
+}
