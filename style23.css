@@ -1,0 +1,103 @@
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+#header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Navigation */
+#nav {
+    background-color: #34495e;
+    padding: 12px;
+    text-align: center;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    color: #1abc9c;
+}
+
+/* Content Container (Sử dụng Flexbox để dàn các cột ngang trên Desktop) */
+#content-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Định dạng chung cho các cột */
+.col {
+    padding: 20px;
+    min-height: 300px;
+    border-radius: 4px;
+}
+
+.left-col {
+    flex: 1;
+    background-color: #e8f8f5;
+    min-width: 200px;
+}
+
+.main-col {
+    flex: 2;
+    background-color: #f9ebea;
+    min-width: 250px;
+}
+
+.right-col {
+    flex: 1;
+    background-color: #fef9e7;
+    min-width: 200px;
+}
+
+/* Footer */
+#footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* --- Responsive Web Design (RWD) cho thiết bị di động --- */
+@media (max-width: 768px) {
+    #content-container {
+        flex-direction: column; /* Chuyển các cột nằm ngang thành xếp chồng dọc */
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
